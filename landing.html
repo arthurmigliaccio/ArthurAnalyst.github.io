@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+
+<html>
+	<style>
+		#header {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		}
+  
+		.icons {
+		  display: flex;
+		  align-items: center;
+		  gap: -100px;
+		  margin-top: 35px;
+		  margin-left: 45px;
+		}
+		.icons li:not(:last-child) {
+		  margin-right: -8px; /* Adjust the margin between icons */
+		}
+		.icons li a {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+		.icons li .label {
+		  display: none; /* Hide the label by default */
+		}
+		.icons li:hover .label {
+		  display: block; /* Show the label on hover */
+		}
+		nav {
+		  order: 1;
+		}
+  
+		body {
+		  margin: 0;
+		  
+		}
+  
+		#wrapper {
+		  position: relative;
+		  z-index: 1;
+		}
+  
+		#vanta-background {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  z-index: -1;
+		}
+	  </style>	
+<head>
+		<title>Cyclistic Bike-Share</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.center {
+			  display: flex;
+			  justify-content: center;
+			}
+		  </style>
+		<style>
+			#one article {
+				position: relative;
+			}
+		  
+			#one article::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #6FC3DF; /* Replace with your desired color and opacity */
+				opacity: 0.8;
+				transition: opacity 0.1s ease;
+			}
+		  
+			#one article:hover::before {
+				opacity: 0.3;
+			}
+		</style>
+		
+	
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Arthur</strong> <span>Analyst</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/arthur-migliaccio/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/arthurmigliaccio/cyclistic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						  </ul>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Cyclistic Project.html">Portfolio</a></li>
+							<li><a href="About.html">About Me</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				
+					<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="tiles">
+						
+						<div class="inner">
+							<span class="image" style="position: relative;">
+								<img src="images/covercyclistic2.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Cyclistic Bike-Share</h1>
+							</header>
+							<div class="content">
+								<p>Google Data Analyst Capstone Project.<br />
+								
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>Hello, I'm Arthur and I will work on the <b>Google Capstone Project</b>. To <b>extract insights</b> from data, I will use my skills in <b>Excel</b>, <b>SQL</b>, <b>R</b>, and <b>Tableau</b>.<br/>
+										Proficient at <b>organizing and manipulating data</b> in Excel, <b>extracting information</b> through SQL queries,<b>performing advanced analysis</b> 
+										and with R,<br/> and creating <b>visually appealing visualizations</b> using Tableau.<br />
+										I'm excited to apply my skills to real-world challenges in this Google Capstone Project where I chose to work with the <b>Cyclistic bike-share data set</b>.<br/> My objective is to <b>uncover actionable insights</b> that contribute to <b>positive outcomes</b> and <b>drive effective decision-making</b>.
+										</p>
+								</div>
+							</section>
+                        						<!-- One -->
+							<section id="index">
+								<div class="inner">
+									<header class="major">
+										<h3>Index</h3>
+									</header>
+										<ul class="links">
+											<li><a href="#about">I. About the Company</a></li>
+											<li><a href="#business">II. Business Statement</a></li>
+											<li><a href="#data">III. Data Collection</a></li>
+											<li><a href="#cleaning">IV. Data Cleaning and Manipulation</li>
+											<li><a href="#cleaningexcel">V. Excel Cleaning and Manipulation</a></li>
+											<li><a href="#pivot">VI. Pivot tables</a></li>
+											<li><a href="#cleaningsql">VII. SQL Cleaning and Manipulation</li>
+											<li><a href="#cleaningr">VIII. R-Programming Language Cleaning and Manipulation</a></li>
+											<li><a href="#analysissql">IX. Analysis in SQL</a></li>
+											<li><a href="#analysisr">X. Analysis in R-Programming Language</a></li>
+											<li><a href="#visualization">XI. Support Visualization</li>
+											<li><a href="#dashboard">XII. Cyclistic Bike-Share Dashboard</a></li>
+											<li><a href="#final">XIII. Final Recommendations</a></li>
+										</ul>
+								</div>
+							</section>
+							<!-- One -->
+							<section id="about">
+								<div class="inner">
+									<header class="major">
+										<h3>I. About the Company</h3>
+											</header>
+									
+											<p><span class="image right"><img src="images/cyclisticlogo.png" alt="" /></span></p>
+											<p><b>Cyclistic</b> is a <bbike-share program></b> operating in <b>Chicago since 2016</b>. With <b>5,824 bicycles</b> and <b>692 stations</b>, users can<br> unlock and return bikes at any station. <p>The company's marketing strategy focuses on broad consumer segments and <b>offers flexible plans</b>, including <b>single-ride passes</b>, <b>full-day passes</b>, and <b>annual memberships</b>.</p>
+												<p>Finance analysts have determined that <b>annual Members</b> are <b>more profitable than Casual riders</b>.<br> The company aims to <b>maximize annual memberships</b> by <b>converting Casual riders</b> for future growth.</p> <p>Led by <b>Lily Moreno</b>, the <b>Director of Marketing</b>, is developing an innovative <b>marketing strategy</b><br> using <b>data insights</b> to <b>attract and retain annual Members</b>.
+												</p>
+								</div>
+							</section>
+						<!-- One -->
+						<section id="business">
+							<div class="inner">
+								<header class="major">
+									<h3>II. Business Statement</h3>
+								</header>
+								<p>To achieve our objectives, we will apply efficient procedures to our available data to <b>ask</b>, <b>prepare</b>, <b>process</b>, <b>analyze</b>, <b>share</b> and <b>act</b>.</p>
+									<p>Our primary aim is to <b>discern the contrasting characteristics</b> between <b>Casual riders</b> and <b>Members</b>, as well as uncover <b>customer usage</b> trends.<br/>Examining the data and presenting it through <b>compelling visual representations</b>, we will then execute a focused <b>marketing campaign via digital media</b>.<br> Through this approach, we intend to <b>convert Casual riders</b> into <b>loyal Members</b>, thus <b>maximizing our customer base</b> and overall <b>business success</b>.
+									</p>
+							</div>
+						</section>
+						<!-- One -->
+						<section id="data">
+							<div class="inner">
+								<header class="major">
+									<h3>III. Data Collection</h3>
+								</header>
+								<p>The Data is collected by <b>DIVVY</b> & the <b>City of Chicago</b> you can <b><a href="https://divvy-tripdata.s3.amazonaws.com/index.html">download it here</a></b>.</p>
+									<p>It was gathered and organized over the last 12 months, starting from <b>April 2022</b> until <b>March 2023</b>.<br/> Stored in an online database composed of <b>first-party</b> sources indicating <b>high integrity</b> and <b>credibility</b>.</p>
+									<p><b>Data privacy</b> issues prohibit personally identifiable information.<br> Consequently, no connections were made from past purchases to credit card numbers. Not determining if casual riders live in the Cyclistic service area<br> or if they have purchased multiple single passes.</p> 
+									<p>Respecting the <b><a href="https://ride.divvybikes.com/data-license-agreement">Data License Agreement here</a></b>, ensuring that all data is used in strict accordance with the terms and conditions.</p>
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="cleaning">
+							<div class="inner">
+								<header class="major">
+									<h3>IV. Data Cleaning and Manipulation</h3>
+								</header>
+								<p>After downloading all 12 zip files they were unzipped in a temporary folder housing the files and using <b>appropriate naming conventions</b>.<br/> Further, I created subfolders for the <b>.CSV</b> and <b>.XLS</b> files to have a copy of the original data.</p>
+							</div>
+						</section>
+						<!-- One -->
+						<section id="cleaningexcel">
+							<div class="inner">
+								<header class="major">
+									<h3>V. Excel Cleaning and Manipulation</h3>
+								</header>
+								<p>I decided to open each file in Excel to apply those procedures, <b>creating new columns</b> and <b>pivot tables</b> to extract some <b>quick insights</b>.</p>
+									<h4>New Columns:</h4>
+										<p><code>ride_date</code>to identify the day when the ride was made, using the formula: <code>=DATE(YEAR(C2),MONTH(C2),DAY(C2))</code><br>formatting the column in date <code>dd/mm/yyyy</code>.</p>
+										<p><code>day_of_week</code>to identify the day of the week in numbers where 1 = Sunday and 7 = Saturday, using the formula:<code>=WEEKDAY(C2,1)</code><br>formatting the column in number and removing the decimals.</p>
+										<p><code>month_date</code>to identify the month of the year in numbers where 1 = January and 12 = December, using the formula:<code>=MONTH(C2)</code><br>formatting the column in Number and removing the decimals.</p>
+										<p><code>year_date</code>to extract only the year, using the formula:<code>=YEAR(C2)</code><br>formatting the column in Date<code>"yyyy"</code>.</p>
+										<p><code>start_time</code>to identify the starting time of each ride, using the formula<code>=TEXT(C2,"hh:mm:ss")</code><br>formatting the column in time <code>"hh:mm:ss"</code>.</p>
+										<p><code>end_time</code>to identify the end time of each ride, using the formula<code>=TEXT(D2,"hh:mm:ss")</code><br>formatting the column in time <code>"hh:mm:ss"</code>.</p>
+										<p><code>ride_length</code>to calculate the duration of each ride, using the formula <code>=D2-C2</code><br>formatting the column in time <code>"hh:mm:ss"</code>.</p>
+									<h4>Modify Columns:</h4>
+										<p><code>started_at</code> and <code>ended_at</code> in custom formatting <code>"dd/mm/yyyy" "hh:mm:ss"</code>.</p>
+							</div>
+						</section>
+						<!-- One -->
+						<section id="pivot">
+							<div class="inner">
+								<header class="major">
+									<h3>VI. Pivot tables</h3>
+								</header>
+								<p>I decided to create some <b>pivot tables</b> to do some quick calculations and extract some <b>meaningful insights from our data</b>.</p>
+								<p>Started by creating a pivot table to compare the <b>average ride length</b> during January.</p>
+								<p><span class="center"><img src="images/pivot1.jpg" alt="" /></span></p>
+								<p>In the second pivot table, we can identify the <b>total amount of rides</b> by each customer type during January.</p>
+								<p><span class="center"><img src="images/pivot2.jpg" alt="" /></span></p>
+								<p>In the third pivot table, let's determine the <b>ride length</b> during the <b>whole week</b> of January month.</p>
+								<p><span class="center"><img src="images/pivot3.jpg" alt="" /></span></p>
+								<p>After all modification and cleaning, modified files were saved in the right extensions <code>.XLS</code> and <code>.CSV</code> in the appropriate subfolder.</p>
+							</div>
+						</section>				
+						<!-- One -->
+						<section id="cleaningsql">
+							<div class="inner">
+								<header class="major">
+									<h3>VII. SQL Cleaning and Manipulation</h3>
+								</header>
+								<p>Since this is such a <b>large data set</b> of 12 months, I decided to move to <b>SQL</b> to continue my analysis. I also used the <b>cloud data platform</b>, <b>Big Query</b>.<br> I created my <b>bucket repository</b> and uploaded all 12 CSV files, <b>creating a project</b> to operate this dataset.</p>
+									<p>Now we will transform and divide our 12 months into quarters: <code>Q1</code>, <code>Q2</code>, <code>Q3</code> and <code>Q4</code>.</p>
+									<script src="https://gist.github.com/arthurmigliaccio/b0caf3bbf8bcbf363f89b253e8d43a8e.js"></script>
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="cleaningr">
+							<div class="inner">
+								<header class="major">
+									<h3>VIII. R-Programming Language Cleaning and Manipulation</h3>
+								</header>
+								<p>Additionally, we have also cleaned our data for further analysis using R. <b>Merging</b> all 12 months in a <b>full year</b>.<br> Checking the data for <b>consistency</b> and <b>structure</b> before merging and after.</p>
+								<h4>Installed R packages:</h4>
+								<p><code>tidyverse</code>, <code>ggplot2</code> and <code>lubridate</code>.</p>
+								<h4>New Columns:</h4>
+								<p><code>date</code>, <code>month</code>, <code>day</code>, <code>year</code>, <code>day_of_week</code> and <code>ride_length</code>. Removed irrelevant data when the bike is taken out of the dock for quality checks or when <code>ride_length</code> is negative.</p>
+								<P>Created an updated data frame named <code>"(V2)"</code> since data is removed to preserve <b>data integrity</b>.</P>
+								<script src="https://gist.github.com/arthurmigliaccio/6cb1167992e2468c3281fbc3c1f59072.js"></script>
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="analysissql">
+							<div class="inner">
+								<header class="major">
+									<h3>IX. Analysis in SQL</h3>
+								</header>
+								<p>Since our data set is now <b>structured</b> and <b>clean</b>, we can query it in <b>SQL</b> to extract relevant information.
+								<p>We can compare the <b>total number of rides</b> between <b>Members</b> and <b>Casuals</b>.<br> Understand the difference service usage during the <b>week</b> and check which is the <b>busiest day of the week</b> for each member type.<br>Calculate the <b>average</b>, <b>median</b>, <b>minimum</b> and <b>maximum</b> ride length.<br>
+								Discover which quarter has the most rides to identify the impact of each season on the <b>number of rides</b>.<br>
+								Investigate the comparison to understand how those two different customers interactions enable us to identify <b>relevant insights</b>.
+								<p>Starting by comparing the <b>total number of rides</b> for the first quarter of 2022 and transforming it into a percentage.<br>
+								We can see that we had <b>503421 total rides</b>. <b>74% of them were made by Members</b> and <b>25% by Casuals</b>.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/6ebd94d2bdabb01efdf77a6512ba1308.js"></script>
+								<p><span class="center"><img src="images/Q1_2022_compare_member_total_percentage.jpg" alt="" /></span></p>
+								<p>Furthermore, we can gain insights into the <b>weekly usage patterns</b> of these two customers across different days of the week. </p>
+								<script src="https://gist.github.com/arthurmigliaccio/2f532fb3658ba4eb9fd6c30a12b6aa09.js"></script>
+								<p><span class="center"><img src="images/Q1_2022_compare_member_total_day_week.jpg" alt="" /></span></p>
+								<p>We can determine the <b>busiest day for each customer type</b>. The favourite day of the week is <b>Tuesday for Members who recorded 64420 rides</b>.<br>In contrast, <b>Sunday is the favourite day of the week for Casuals who recorded 23296 rides</b>.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/4157a8beae8338d1afd6205494c87423.js"></script>
+								<p><span class="center"><img src="images/--Q1_2022_compare_busiest_day.jpg" alt="" /></span></p>
+								<p>To understand the ride patterns between the two groups of riders, we will calculate <b>key ride length statistics</b>, including the <b>average</b>, <b>maximum</b>, <b>minimum</b>, and <b>median</b> values.<br> Analyzing these metrics will provide valuable insights into each group's distinct patterns.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/ffcf596fddd0bad6896ea32ed4a4ba1b.js"></script>
+								<p>The <b>average ride length</b> where of <b>11 minutes for annual members</b> and almost <b>31 minutes for Casuals</b>.</p>
+								<p><span class="center"><img src="images/Q1_2022_compare_member_average_length.jpg" alt="" /></span></p>
+								<p>The <b>minimum ride length</b> looks the same, but the <b>maximum ride length</b> is impressive <b>572 minutes for Casuals</b> versus <b>25 minutes for Members</b>.</p>
+								<p><span class="center"><img src="images/--Q1_2022_compare_member_min_length.jpg" alt="" /></span></p>
+								<p><span class="center"><img src="images/--Q1_2022_compare_member_max_length.jpg" alt="" /></span></p>
+								<p>Looking for accuracy, I calculated the <b>median ride length</b>. This way, we can determine the middle value that separates the longer and shorter rides and provides a more representative measure.<br>Helping mitigate the influence of outliers and providing a clear understanding of the typical <b>ride length within each group</b>.</p>
+								<p><span class="center"><img src="images/Q1_2022_compare_member_median_length.jpg" alt="" /></span></p>
+								<p>Now let’s <b>compare the quarters</b> by <b>calculating the number of rides</b> made by each group.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/97dfc81447e6f36ee9e426b76a2b257d.js"></script>
+
+								<h4>First Quarter</h4>
+								<p><span class="cente"><img src="images/Q1_2022_num_rides.jpg" alt="" /></span></p>
+								<h4>Second Quarter</h4>
+								<p><span class="cente"><img src="images/Q2_2022_num_rides.jpg" alt="" /></span></p>
+								<h4>Third Quarter</h4>
+								<p><span class="cente"><img src="images/Q3_2022_num_rides.jpg" alt="" /></span></p>
+								<h4>Fourth Quarter</h4>
+								<p><span class="cente"><img src="images/Q4_2022_num_rides.jpg" alt="" /></span></p>
+								<p>Doing it we can determine that most rides take place during <b>Summer</b>.</p>
+
+		
+		
+		
+
+
+
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="analysisr">
+							<div class="inner">
+								<header class="major">
+									<h3>X. Analysis in R-Programming Language</h3>
+								</header>
+								<p>As I transitioned from <b>SQL</b> to <b>R</b>, I merged and analyzed four quarters of data.<br> 
+									Combining these quarters into a single dataset in R, using its powerful analytical capabilities to <b>gain insights and identify patterns</b>.<br> 
+									This transition will <b>eliminate repetitive tasks and allow data manipulation and analysis to be performed more effectively</b>.</p>
+								<p>We can retrieve the <b>Minimum</b>, <b>Median</b>, <b>Mean</b> and <b>Maximum</b> of the <b>whole year now</b>.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/5318fa3807d6b6f32365885c7d8aeeb0.js"></script>
+									<P>Results from the <b>total rides during the whole year</b>.</P>
+									<p><span class="center"><img src="images/R_2022_print_summary.jpg" alt="" /></span></p>
+									<p>Compare all those measurements between the two groups during the whole year.</p>
+									<script src="https://gist.github.com/arthurmigliaccio/ca773d3eca9547dc18fe7a706ad44bfb.js"></script>
+									<p>Compared ride length measurements during 2022 between <b>Casual and Members</b>.</p>
+
+									<p><span class="cente"><img src="images/R_2022_print_compare_length.jpg" alt="" /></span></p>
+								<p>Now we will create a <b>Tibble</b> with the <b>customer type</b>, <b>number of rides</b>, and <b>average ride duration</b> <b>comparing them during the week</b>.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/18b9134ab8f6434e96975c924cf69ce3.js"></script>
+								<h4>Tibble</h4>
+								<p><span class="cente"><img src="images/R_2022_compare_length_average_group_tibble.jpg" alt="" /></span></p>
+								<p>On <b>R</b> we can also create a <b>Visualization</b> to bring more information when we are <b>analysing our dataset</b>.</p>
+								<script src="https://gist.github.com/arthurmigliaccio/30984c4a0b6f4b84fa51cc492f1fb363.js"></script>
+								<p>This <b>Vizualization</b> can quickly show us the <b>proportion</b> and the <b>distribution of rides during the whole year on weekdays</b>,<br> comparing both groups of user types.</p>
+								<p><span class="center"><img src="images/Rplot.png" alt="" /></span></p>
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="visualization">
+							<div class="inner">
+								<header class="major">
+									<h3>XI. Support Visualization</h3>
+								</header>
+								<p>Now we will use <b>Tableau Public</b> to create beautiful <b>aesthetic visualizations</b>, to showcase <b>key findings</b><br>and <b>interesting patterns about our data</b>, in a way that is simple and clear to make <b>data-driven decisions</b>.<br> Additionally, I will create an <b>interactive dashboard</b> to show how those key patterns change over time, interacting between the graphics.</p>
+								<p>I uploaded the whole year dataset created in <b>R</b> order to start creating visualizations in <b>Tableau</b>.</p>
+								<h4>Donut Chart</h4>
+								<p>Decided to create a <b>Donut Chart</b>, representing the <b>total rides</b> in the middle and comparing the <b>total annual rides</b> by <b>each customer type</b>.<br> We found that more than <b>60% of our customers are Members</b> and almost <b>40% are Casuals</b>. With over <b>4 million rides each year</b>.</p>
+								<div class='tableauPlaceholder' id='viz1685533050675' style='position: center'><noscript><a href='#'><img alt='donut graph ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofridesfromCustomerType&#47;donutgraph&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NumberofridesfromCustomerType&#47;donutgraph' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofridesfromCustomerType&#47;donutgraph&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685533050675');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<h4>Pie Chart</h4>
+								<p>After that, I created two <b>Pie Charts</b> to represent both groups and show their <b>bike type preference</b>.<br> <b>Casuals are the only docked bicycle users</b>.<br><b>Members prefer classic bikes for over 65% of their rides</b>.</p>
+								<div class='tableauPlaceholder' id='viz1685534394155' style='position: relative'><noscript><a href='#'><img alt='pie graph ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofRidesbyBikeTypePreference&#47;piegraph&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NumberofRidesbyBikeTypePreference&#47;piegraph' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Nu&#47;NumberofRidesbyBikeTypePreference&#47;piegraph&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685534394155');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<h4> Bar Chart</h4>
+								<p>To understand the pattern of the <b>number of rides by season</b> I used a <b>Bar Chart</b>, showing both customer types by the <b>number of rides for each season</b>.<br> The <b>highest service usage</b> is <b>during the Summer Season for both types of members</b>. In contrast, <b>Casuals account for only 1.28% of usage</b>,<br> while <b>Members account for only 5.31%</b> in the <b>Winter Season</b>.</p>
+								<div class='tableauPlaceholder' id='viz1685535642489' style='position: relative'><noscript><a href='#'><img alt='Dashboard 7 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ri&#47;RidesbySeason&#47;Dashboard7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RidesbySeason&#47;Dashboard7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ri&#47;RidesbySeason&#47;Dashboard7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685535642489');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<h4>Column Chart</h4>
+								<p>Checking the <b>weekly usage</b> I made a <b>Column Chart</b>, where we represent the <b>days of the week and the total annual rides</b> by each customer type.<br>During the week, <b>Members</b> use the service <b>more consistently</b> than <b>Casual riders</b>, who use it <b>more on Saturdays and Sundays</b>.</p>
+								<div class='tableauPlaceholder' id='viz1685536053076' style='position: relative'><noscript><a href='#'><img alt='bar chart ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalRidesbyDayoftheWeek&#47;barchart&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TotalRidesbyDayoftheWeek&#47;barchart' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;To&#47;TotalRidesbyDayoftheWeek&#47;barchart&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685536053076');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<h4>Line Charts</h4>
+								<p>It is possible to identify the <b>median length</b> of each member type during the whole year, creating a <b>Line Chart</b> to represent it. <br>We can see that <b>Casuals use the service for more time</b>, ranging <b>from 2 minutes to 5 minutes longer than Members</b>.</p>
+								<div class='tableauPlaceholder' id='viz1685536324224' style='position: relative'><noscript><a href='#'><img alt='line chart1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyMedianRide&#47;linechart1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MonthlyMedianRide&#47;linechart1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonthlyMedianRide&#47;linechart1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685536324224');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<p>I created a second <b>Line Chart</b> to analyze <b>usage by the hour</b>.  Now it is possible to plan and anticipate when those rides will get longer.<br> Even if <b>Casual users</b> tend to <b>use the service for 1 or 2 minutes more</b>, we can see the <b>peak happening from midday</b>.</p>
+								<div class='tableauPlaceholder' id='viz1685536647040' style='position: relative'><noscript><a href='#'><img alt='line chart2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DayHoursMedianRide&#47;linechart2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DayHoursMedianRide&#47;linechart2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DayHoursMedianRide&#47;linechart2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685536647040');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<h4>Demographic Maps</h4>
+								<p>Willing to identify the <b>top 3 stations and their location</b> we created <b>two Map visualizations with Bar Charts below representing each station</b>. </p>
+								<p>The <b>3 most famous stations as starting and ending points</b> for both groups are <b>"Monroe Street"</b>, <b>"North Boulevard"</b> and <b>"Grand Avenue"</b>. </p>
+								<p>Those stations are all located near <b>famous tourist attractions and Chicago's City Centre</b>. We can see how those stations are <b>most used by Casual riders</b>. </p>
+								<div class='tableauPlaceholder' id='viz1685537321087' style='position: relative'><noscript><a href='#'><img alt='Demographic and top 3 starting station ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Startingstationsmaptop3stations&#47;Demographicandtop3startingstation&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Startingstationsmaptop3stations&#47;Demographicandtop3startingstation' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;Startingstationsmaptop3stations&#47;Demographicandtop3startingstation&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685537321087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<div class='tableauPlaceholder' id='viz1685537317844' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;Endingstationsmaptop3stations&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Endingstationsmaptop3stations&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;Endingstationsmaptop3stations&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685537317844');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="dashboard">
+							<div class="inner">
+								<header class="major">
+									<h3>XII. Cyclistic Bike-Share Dashboard</h3>
+								</header>
+								<p>Lastly, I created a <b>Dashboard</b> that presented all of my research's <b>key findings</b> in an <b>easy-to-use way</b> 
+									<br>and allows users <b>interact with the graphs</b> to better understand them and <b>explore relevant findings and patterns</b>.</p>
+									<div class='tableauPlaceholder' id='viz1685554509125' style='position: relative'><noscript><a href='#'><img alt='Dashboard 5 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cy&#47;CyclisticDashboard_16850380753980&#47;Dashboard5&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CyclisticDashboard_16850380753980&#47;Dashboard5' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cy&#47;CyclisticDashboard_16850380753980&#47;Dashboard5&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685554509125');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+							</div>
+						</section>		
+						<!-- One -->
+						<section id="final">
+							<div class="inner">
+								<header class="major">
+									<h3>XIII. Final Recommendations</h3>
+								</header>
+								<ul>
+									<li>Create an <b>integrated phone application</b> to <b>track your rides</b> and <b>offer live promotions</b> for existing members.<br>
+										Add <b>special features</b> for Members to <b>record their progress</b> and rides, <b>including maps</b>, <b>bike availability</b> at each station,<br> <b>offers</b> and <b>achievements</b>.</li>
+									<p></p>
+									<li>Introduce a <b>Referral Program</b> where existing <b>Members can earn rewards</b> or <b>discounts</b> by <b>referring Casuals</b> to join the membership.<br> <b>Promote this program</b> <b>on social media</b> and <b>encourage Members</b> to <b>share their referral codes</b> <b>with their friends, family,<br> and social networks</b>.</li>
+									<p></p>
+									<li><b>Share the advantages of membership</b> via <b>social media</b> platforms. These include <b>unlimited rides</b> throughout the year, <b>priority access</b> to bikes,<br> <b>exclusive discounts</b>, and <b>achievement perks</b> that <b>demonstrate sustainability</b> and <b>C02 reductions</b>.</li>
+									<p></p>
+									<li><b>Bike-sharing for Everybody</b>, showing how the service covers <b>different lifestyles</b> and needs such as <b>daily commuting</b> or frequent <b>leisure rides</b>.<br> <b>Share tips and tricks</b> for <b>making the most of your subscription</b> including <b>recommended bike routes</b> and <b>popular attractions</b> accessible <b>through the bike-sharing service</b>.</li>
+									<p></p>
+									<li>Make <b>Limited-Time social media promotions targeted at Casual</b> to encourage them to <b>upgrade to the membership plan</b>.<br><b>Offering trials</b> and <b>discounts</b>, especially in the <b>low seasons</b>.</li>
+									<p></p>
+									<li>Utilize <b>Targeted Advertising Campaigns</b> on <b>social media platforms</b> to <b>reach Casuals</b> who may be more likely <b>to convert to memberships</b>. Utilizing <b>insight into bike types</b>, <b>peak usage times</b>  and <b>preferred days of the week</b> to <b>tailor ads</b>.</li>
+								  </ul>
+							</div>
+						</section>		
+						<!-- Two 
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								
+								<li><a href="https://www.linkedin.com/in/arthur-migliaccio/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/arthurmigliaccio/cyclistic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; ALL Rights Reserved to Arthur Migliaccio</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

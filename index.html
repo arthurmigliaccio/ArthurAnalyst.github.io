@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<!--
+	Arthur Data Analyst
+-->
+<html>
+<head>
+	
+	<style>
+	  
+		
+		#header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	  }
+
+	  .icons {
+		display: flex;
+		align-items: center;
+		gap: -100px;
+		margin-top: 35px;
+		margin-left: 45px;
+	  }
+	  .icons li:not(:last-child) {
+		margin-right: -8px; /* Adjust the margin between icons */
+	  }
+	  .icons li a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  .icons li .label {
+		display: none; /* Hide the label by default */
+	  }
+	  .icons li:hover .label {
+		display: block; /* Show the label on hover */
+	  }
+	  nav {
+		order: 1;
+	  }
+
+	  body {
+		margin: 0;
+		
+	  }
+
+	  #wrapper {
+		position: relative;
+		z-index: 1;
+	  }
+
+	  #vanta-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	  }
+	</style>
+
+	<title>Arthur Data Analyst</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body>
+	<style>
+		
+		#one {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: flex-start;
+		  margin: 0;
+		  padding: 0;
+		}
+	  
+		#one article {
+		  flex-basis: calc(100% - 2px);
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  text-align: center;
+		  padding: 0;
+		  margin: 0;
+		  background-color: #f5f5f5;
+		  border: none;
+		}
+	  
+		#one article .image {
+		  flex-grow: 1;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  overflow: hidden;
+		}
+	  
+		#one article .image img {
+		  width: 100%;
+		  height: 100%;
+		  object-fit: cover;
+		}
+	  </style>
+	  <style>
+		#one article {
+		  position: relative;
+		}
+	  
+		#one article::before {
+		  content: "";
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #6FC3DF; /* Replace with your desired color and opacity */
+		  opacity: 0.8;
+		  transition: opacity 0.1s ease;
+		}
+	  
+		#one article:hover::before {
+		  opacity: 0.3;
+		}
+	  
+		#one article:nth-child(2)::before {
+		  /* Add the following CSS properties for the second square */
+		  background-color: #6f8bdf; /* Replace with your desired color and opacity */
+		  opacity: 0.8;
+		  transition: opacity 0.1s ease;
+		}
+	  
+		#one article:nth-child(2):hover::before {
+		  opacity: 0.3;
+		}
+	  
+		#one article:nth-child(3)::before {
+		  /* Add the following CSS properties for the third square */
+		  background-color: #000000; /* Replace with your desired color and opacity */
+		  opacity: 0.8;
+		  transition: opacity 0.1s ease;
+		}
+	  
+		#one article:nth-child(3):hover::before {
+		  opacity: 0.3;
+		}
+	  
+		#one article:nth-child(4)::before {
+		  /* Add the following CSS properties for the fourth square */
+		  background-color: #6fdfc3; /* Replace with your desired color and opacity */
+		  opacity: 0.8;
+		  transition: opacity 0.1s ease;
+		}
+	  
+		#one article:nth-child(4):hover::before {
+		  opacity: 0.3;
+		}
+		#one article:nth-child(5)::before {
+			/* Add the following CSS properties for the fourth square */
+			background-color: #6FC3DF; /* Replace with your desired color and opacity */
+			opacity: 0.8;
+			transition: opacity 0.1s ease;
+		  }
+		
+		  #one article:nth-child(5):hover::before {
+			opacity: 0.3;
+		  }
+		  #one article:nth-child(6)::before {
+			/* Add the following CSS properties for the fourth square */
+			background-color: #000000; /* Replace with your desired color and opacity */
+			opacity: 0.8;
+			transition: opacity 0.1s ease;
+		  }
+		
+		  #one article:nth-child(6):hover::before {
+			opacity: 0.3;
+		  }
+	  </style>	
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+	  <!-- Header -->
+	  <header id="header" class="alt">
+		<a href="index.html" class="logo"><strong>Arthur</strong> <span>Analyst</span></a>
+		<nav>
+		  <a href="#menu">Menu</a>
+		</nav>
+		<ul class="icons">
+		  <li><a href="https://www.linkedin.com/in/arthur-migliaccio/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		  <li><a href="https://github.com/arthurmigliaccio/cyclistic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+	  </header>
+
+	  <!-- Menu -->
+	  <nav id="menu">
+		<ul class="links">
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="Cyclistic Project.html">Project</a></li>
+		  <li><a href="About.html">ABout</a></li>
+		  <li><a href="Contact.html">Contact</a></li>
+		</ul>
+	  </nav>
+
+	  <!-- Banner -->
+	  <section id="inner" class="logo" style="display: flex; justify-content: center; align-items: center;">
+		<div id="vanta-background"></div>
+		<div class="inner">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+			<script>
+				document.addEventListener('DOMContentLoaded', () => {
+					VANTA.NET({
+						el: "#vanta-background",
+						mouseControls: true,
+						touchControls: true,
+						gyroControls: false,
+						minHeight: 200.00,
+						minWidth: 200.00,
+						scale: 1.00,
+						scaleMobile: 1.00,
+						color: 0x6fc3df,
+						backgroundColor: 0x0,
+						points: 20.00,
+						maxDistance: 28.00,
+						spacing: 19.00
+					});
+				});
+			</script>
+			<header class="logo">
+				<h1 style="text-align: center;">ARTHUR MIGLIACCIO<br /> 
+					PORTFOLIO
+				</h1>
+			</header>
+			<div class="logo">
+				<p style="text-align: center;">
+					Greetings! I'm a skilled data analyst with Excel, SQL, R, and Tableau expertise. <br />
+					I transform raw data into meaningful information to create aesthetic visualizations.
+				</p>
+			</div>
+			<div class="logo">
+				<ul class="actions" style="text-align: center;">
+					<li style="margin: 0 auto;"><a href="#one" class="button next scrolly">My Projects</a></li>
+				</ul>
+			</div>
+		</div>
+	  </section>
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- One -->
+		<section id="one" class="tiles">
+			<article>
+				<span class="image">
+					<img src="images/covercyclistic.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h3 style="text-align: center;"><a href="Cyclistic Project.html" class="link"><center></center>Cyclistic Bike-Share</a></h3>
+					<p>Google Data Analytics Capstone Project</p>
+				</header>
+			</article>
+			<article>
+				<span class="image">
+					<img src="images/tableaucover.png" alt="" />
+				</span>
+				<header class="major">
+					<h3><a href="https://public.tableau.com/app/profile/arthur.migliaccio" class="link">Tableau</a></h3>
+					<p>Tableau Projects and Dashboard</p>
+				</header>
+			</article>
+			<article>
+		
+				<span class="image">
+					<img src="images/githubcover.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h3><a href="https://github.com/arthurmigliaccio/cyclistic" class="link">Github</a></h3>
+					<p>Github project repository</p>
+				</header>
+			</article>
+			<article>
+				<span class="image">
+					<img src="images/excelcover.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h3><a href="Cyclistic Project.html#cleaningexcel" class="link">Excel</a></h3>
+					<p>Using Excel in the Cyclistic Project</p>
+				</header>
+			</article>
+			<article>
+				<span class="image">
+					<img src="images/sqlcover.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h3><a href="Cyclistic Project.html#analysissql" class="link">SQL</a></h3>
+					<p>SQL Analysis in the Cyclistic Project</p>
+				</header>
+			</article>
+			<article>
+				<span class="image">
+					<img src="images/rcover.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h3><a href="Cyclistic Project.html#analysisr" class="link">R - Programming</a></h3>
+					<p>Analysis R-Programming Language in the Cyclistic Project</p>
+				</header>
+
+
+
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/arthur-migliaccio/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/arthurmigliaccio/cyclistic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+			
+			<div class="logo">
+				<ul class="actions" style="text-align: center;">
+					<li style="margin: 0 auto;"><a href="index.html" class="button next scrolly">My Projects</a></li>
+				</ul>
+			</div>
+			<ul class="copyright">
+				<li>&copy; ALL Rights Reserved to Arthur Migliaccio</li>
+				<li><a href="privacyupdate.html">Privacy Statment</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

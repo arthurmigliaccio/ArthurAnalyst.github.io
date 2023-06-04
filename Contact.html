@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+
+<html>
+	<style>
+		#header {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		}
+  
+		.icons {
+		  display: flex;
+		  align-items: center;
+		  gap: -100px;
+		  margin-top: 35px;
+		  margin-left: 45px;
+		}
+		.icons li:not(:last-child) {
+		  margin-right: -8px; /* Adjust the margin between icons */
+		}
+		.icons li a {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+		.icons li .label {
+		  display: none; /* Hide the label by default */
+		}
+		.icons li:hover .label {
+		  display: block; /* Show the label on hover */
+		}
+		nav {
+		  order: 1;
+		}
+  
+		body {
+		  margin: 0;
+		  
+		}
+  
+		#wrapper {
+		  position: relative;
+		  z-index: 1;
+		}
+  
+		#vanta-background {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  z-index: -1;
+		}
+	  </style>	
+	<head>
+		<title>Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.center {
+			  display: flex;
+			  justify-content: center;
+			}
+		  </style>
+		  <style>
+			#one article {
+				position: relative;
+			}
+		  
+			#one article::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #6FC3DF; /* Replace with your desired color and opacity */
+				opacity: 0.8;
+				transition: opacity 0.1s ease;
+			}
+		  
+			#one article:hover::before {
+				opacity: 0.3;
+			}
+		</style>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Arthur</strong> <span>Analyst</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/arthur-migliaccio/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/arthurmigliaccio/cyclistic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						  </ul>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Cyclistic Project.html">Project</a></li>
+							<li><a href="About.html">About</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Contact</h1>
+									</header>
+									If you're in need of assistance or have any questions related to data analysis, feel free to reach out. Simply provide your contact details and your message below, and I'll get back to you as soon as possible.
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+				<section id="contact">
+					<div class="inner">
+						<section>
+							<h3>Contact Me</h3>
+							<p></p>
+							<form method="post" action="process_form.php">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Clear" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split">
+							<section>
+								<div class="contact-method">
+									<span class="icon solid alt fa-envelope"></span>
+									<h3>Email</h3>
+									<a href=mailto:“arthur.m.analyst@gmail.com”>arthur.m.analyst@gmail.com</a>
+								</div>
+							</section>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							
+							<li><a href="https://www.linkedin.com/in/arthur-migliaccio/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/arthurmigliaccio/cyclistic" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+						<div class="logo">
+							<ul class="actions" style="text-align: center;">
+								<li style="margin: 0 auto;"><a href="index.html" class="button next scrolly">My Projects</a></li>
+							</ul>
+						<ul class="copyright">
+							<li>&copy; ALL Rights Reserved to Arthur Migliaccio</li>
+							<li><a href="privacyupdate.html">Privacy Statment</li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
